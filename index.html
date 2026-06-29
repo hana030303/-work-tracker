@@ -11,8 +11,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="WorkTrack">
   <link rel="apple-touch-icon" href="./icon-192.png">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?familhy=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libsh/xlsx/0.18.5/xlsx.full.min.js"></script>
   <style>
     /* ─── TOKENS ─────────────────────────────── */
     :root {
@@ -2203,6 +2203,7 @@ function cpInit() {
   const today = new Date();
   const y = today.getFullYear(), m = String(today.getMonth()+1).padStart(2,'0'), d = String(today.getDate()).padStart(2,'0');
   if (!document.getElementById('cp-date').value) document.getElementById('cp-date').value = `${y}-${m}-${d}`;
+  cpOnFanPageChange();
   cpGenerate();
 }
 
